@@ -1,0 +1,109 @@
+$switch-bg: #ccc;
+$active-switch-bg: #4cd964;
+$slider-size: 15px;
+$transition-time: 0.4s; 
+
+.card__container {
+    width: 15vw;
+    height: 45vh;
+    border: 3px solid grey;
+    border-radius: 5px;
+    
+    .card__center {
+        height: 60%;
+        background-color: #F6F6F6;
+        text-align: center;
+        padding: 15px;
+        img {
+            width: 5vw;
+            margin: 25px auto;
+            color: yellow;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 500;
+            color: black;
+        }
+    }
+
+    .card__bottom {
+        height: 40%;
+        background-color: white;
+        padding: 10px;
+
+
+        &--main {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 18px;
+          
+            input {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+          }
+          
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $switch-bg;
+            transition: $transition-time;
+          
+            &:before {
+              position: absolute;
+              content: "";
+              height: $slider-size;
+              width: $slider-size;
+              left: 4px;
+              bottom: 2px;
+              background-color: white;
+              transition: $transition-time;
+            }
+          }
+          
+          input:checked + .slider {
+            background-color: $active-switch-bg;
+          
+            &:before {
+              transform: translateX(26px);
+            }
+          }
+          
+          input:focus + .slider {
+            box-shadow: 0 0 1px $active-switch-bg;
+          }
+          
+          // Rounded sliders
+          .slider.round {
+            border-radius: 34px;
+          
+            &:before {
+              border-radius: 50%;
+            }
+          }
+        }
+
+        &--noti {
+          margin-top: 20px;
+        }
+
+        &--setTime {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        
+    }
+}

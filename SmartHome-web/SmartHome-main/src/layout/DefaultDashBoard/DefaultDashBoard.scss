@@ -1,0 +1,19 @@
+.container-fluid {
+    display: flex;
+    padding: 0;
+
+    .noti {
+        padding: 15px 0 0 15px;
+        background-color: white;
+        height: 90vh;
+        color: #135D66;
+
+        h4 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+    
+    }
+    
+}

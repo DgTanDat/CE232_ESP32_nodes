@@ -1,0 +1,22 @@
+h3 {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.doorLight__list {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    
+    & > * {
+        margin: 0 50px;
+
+    }
+}

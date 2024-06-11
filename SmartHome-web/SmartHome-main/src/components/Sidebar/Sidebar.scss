@@ -1,0 +1,97 @@
+$sideBar-color: #1a2842;
+$hover-bgcolor: #28394f;
+$hover-color: #497886;
+
+.sidebar {
+    background-color: $sideBar-color;
+    color: grey;
+    padding: 20px;
+    width: 20vw;
+    height: 100vh;
+    min-width: 280px;
+
+    &__title {
+        display: flex;
+        margin-bottom: 5vh;
+        padding-bottom: 10px;
+        min-width: 280px;
+
+
+        > * {
+            margin-right: 2vw;
+        }
+
+        h3 {
+            color: white;
+            font-size: 25px;
+            margin: auto 0;
+        }
+        img {
+            width: 5vw;
+            height: 10vh;
+            margin-right: 1vw;
+            min-width: 60px;
+        }
+    }
+
+    &__list {
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            a {
+                height: 20%;
+                color: grey;
+
+                &.active {
+                    background-color: #77B0AA;
+                    color: #E3FEF7;
+                }
+
+                li {
+                    font-size: 17px;
+                    font-weight:600;
+                    padding: 10px;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        color: $hover-color;
+                        background-color: $hover-bgcolor;
+                    }
+    
+                    
+                    i {
+                        width: 18px;
+                        margin-right: 20px;
+
+                        
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+    &__social {
+        margin-top: 200px;
+        text-align: center;
+        h5 {
+            margin-left: -10px;
+            margin-bottom: 10px;
+        }
+        a {
+            color: grey;
+            i {
+                margin-right: 20px;
+                cursor: pointer;
+    
+                &:hover {
+                    color: #0f8ff2;
+                }
+            }
+        }
+    }
+}

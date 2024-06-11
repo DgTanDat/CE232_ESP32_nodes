@@ -1,0 +1,74 @@
+.sub-container {
+    display: flex;
+    
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 5%;
+    background-color: white;
+
+    .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 70%;
+            height: 70%;
+            
+        }
+    }
+
+    .signIn {
+        width: 60%;
+        height: 60%;
+    
+        background-color: #e0e0e0;
+        padding: 20px;
+        //border: 2px solid black;
+        border-radius: 5px;
+        font-size: 15px;
+
+        h2 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
+        .data{
+            text-align: center;
+        }
+    
+        .forgotPass {
+            text-align: end;
+            margin-top: 10px;
+            margin-right: 20%;
+    
+            font-weight: bold;
+        }
+    
+        .data input, button {
+            width: 60%;
+            //margin-bottom: 20px;
+            margin: 0 0 20px 0;
+            padding: 11px;
+            border-radius: 20px;
+        }
+
+        .signin__google {
+            i {
+                margin-right: 15px;
+            }
+        }
+    
+        .register {
+            text-align: center;
+        }
+    
+    }
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
